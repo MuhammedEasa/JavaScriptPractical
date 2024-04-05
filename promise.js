@@ -62,6 +62,6 @@ Promise.any([promise1,promise2]).then((result) => {
 
 // race
 // gives the first promise
-Promise.any([promise1,promise2]).then((result) => {
+Promise.race([promise1,promise2]).then((result) => {
     console.log('The first promise  was:', result);
   });
